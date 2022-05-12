@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <!-- En esta primera parte, lo que hacemos es crear el diseño de la base, añádiendole la barra navegadora al igual que en el index y en el resto de las páginas -->
+    <h1>Tienda de mascotas</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./accesorios.html">Accesorios</a></li>
+            <li><a href="./entretencion.html">Entretención</a></li>
+            <li><a href="./higiene.html">Higiene</a></li>
+            <li><a href="./formulario.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Acá creamos un contenedor para poder darle forma a nuestro formulario -->
+    <div class="contenedor">
+        <h1>Formulario de Contacto</h1>
+        <!-- Luego creamos el contenido dentro del contenedor, y comenzamos a añadir la información de la tienda, a la izquierda -->
+        <div class="contenido">
+            <div class="info">
+                <div class="col">
+                    <i class="icono fas fa-map-marker-alt"></i>
+                    <p>Curacaví, Avenida O'higgins #505</p>
+                </div>
+                <div class="col">
+                    <i class="icono fas fa-envelope"></i>
+                    <p>tiendademascotascuracaví@gmail.com</p>
+                </div>
+                <div class="col">
+                    <i class="icono fas fa-phone"></i>
+                    <p>+56 9 9197 1091<br>+56 9 9946 7091</p>
+                </div>
+            </div>
+
+            <!-- Acá conectamos el formulario con el archivo "enviado.html" para que al enviar el formulario, le aparezca una nueva página al usuario -->
+            <form action="enviado.html" method="GET" class="formulario">
+                <!-- Luego le damos el texto correspondiente a cada recuadro del formulario -->
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
+                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                <!-- Y añadimos el botón y lo validamos para que el usuario pueda enviar la información ingresada -->
+                <button type="button" onclick="validarFormulario()">Enviar</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Por último añadimos un footer para terminar de darle el diseño a la base de la página. Al igual que en el index, y en el resto de las páginas -->
+    <footer>
+        <div class="footer-content">
+            <h2>Curacaví, Avenida O'higgins #505</h2>
+            <p>Tienda especializada en mascotas. Contáctanos en nuestras redes sociales.</p>
+            <ul class="redes">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2022. Designed By Natalia and Javiera</p>
+        </div>
+    </footer>
+
+    <!-- Finalmente, añadimos jquery y javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>

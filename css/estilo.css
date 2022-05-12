@@ -84,6 +84,21 @@ img{
     text-align: center;
 }
 
+h4{
+    padding: 90px 20% 90px;
+    text-align: center;
+    color: darkkhaki;
+}
+
+.contenedor{
+    display: center;
+    text-align: center;
+}
+
+.cuerpo{
+    width: 100%;
+    height: auto;
+}
 
 div.gallery {
     border: 1px solid #ccc;
