@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Listar fromularios</title>
+</head>
+
+<!--Esta página fue creada para listar los formularios.-->
+<title>{% block title %}Lista de Formularios{% endblock title %}</title>
+
+<body>
+    <h2>Lista de mensajes</h2>
+
+    {% for c in formulario %}
+        <div>
+            <p>Nombre: {{ c.nombre }} </p>
+            <p>Correo: {{ c.correo }} </p>
+            <p>Asunto: {{ c.asunto }} </p>
+            <p>Mensaje: {{ c.mensaje }} </p>
+        </div>
+        <br>
+    {% endfor %}
+ 
+  </body>
+</html>
